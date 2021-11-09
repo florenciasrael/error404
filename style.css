@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    color: rgb(218, 15, 15);
+    font-size: 2200%;
+    justify-content: center;
+}
+
+.contenedor img {
+    width: 1%;
+    margin: 0 auto;
+    animation-name: ajo;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes ajo{
+    
+    0%{
+        transform: rotate(1turn)scale(1.2)
+    }
+    100% {
+        transform: scale(0.1);
+    }
+    
+}
+
+/*------------*/
+
+.verduras {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation-name: verduras;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.contenedor .verduras .img2 {
+    width: 300%;
+    flex-direction: row;
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0%;
+    
+}
+
+@keyframes verduras {
+    0% {
+        transform: translate(0%);
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translate(100%);
+        opacity: 0%;
+    }
+}
+
+.txt2 h1 {
+    font-size: 180%;
+    display: flex;
+    justify-content: center;
+}
+
+.txt2 h2 {
+    font-size: 140%;
+    display: flex;
+    justify-content: center;
+}
