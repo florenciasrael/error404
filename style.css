@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Vibur', cursive;
+    
 }
 
 .contenedor {
@@ -13,73 +14,71 @@
     align-items: center;
 }
 
-.contenedor img {
-    width: 1%;
+.txt {
+    color: rgb(218, 15, 15);
+    font-size: 2300%;
+    justify-content: center;
+}
+.txt .ajo {
+    width: 35%;
     margin: 0 auto;
     animation-name: ajo;
     animation-duration: 1s; 
     animation-iteration-count: infinite; 
 }
-.txt {
-    color: rgb(218, 15, 15);
-    font-size: 2200%;
-    justify-content: center;
-}
-.txt img {
-    width: 35%;
-}
 
 @keyframes ajo {
     
     0%{
-        transform: rotate(360deg);scale(1.2)
+        transform: rotate(360deg);
     }
-    100% {
-        transform: rotate(0deg); scale(0.1);
-    }
-    
 }
 
-/*------------*/
-
-.verduras {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    animation-name: verduras;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+.cartel1 img {
+    width: 25%;
+}
+.contenedor .cartel1{
     position: absolute;
+    animation-name: carteles;
+    animation-duration: 2s;
+    top: 6%;
 }
-.contenedor .verduras .img2 {
-    width: 300%;
-    flex-direction: row;
-    margin: 0% auto;
-    display: flex;
-    
+.cartel2 img {
+    width: 90%;
+}
+.contenedor .cartel2 {
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    animation-name: carteles;
+    animation-duration: 5s;
 }
 
-@keyframes verduras {
+@keyframes carteles {
     0% {
-        transform: translateY(0%);scale(1.1)
-        opacity: 100%;
-    }
-
-    100% {
-        transform: translateY(100%);
         opacity: 0%;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(1.0);
     }
 }
 
 .txt2 h1 {
     font-size: 180%;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 23%;
+    top: 70%;
 }
 
-.txt2 h2 {
+.txt2 a {
     font-size: 140%;
-    display: flex;
-    justify-content: center;
+    width: 20%;
+    position: absolute;
+    left: 38%;
+    top: 80%;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: rgba(192, 11, 11, 0.747);
 }
