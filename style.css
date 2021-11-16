@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     font-family:'Vibur', cursive;
-    
 }
 
+body {
+    background-color: rgba(211, 8, 8, 0.39);
+}
 .contenedor {
     width: 100%;
     box-sizing: border-box;
@@ -40,7 +42,7 @@
 .contenedor .cartel1{
     position: absolute;
     animation-name: carteles;
-    animation-duration: 2s;
+    animation-duration: 4s;
     top: 6%;
 }
 .cartel2 img {
@@ -51,14 +53,18 @@
     left: 75%;
     top: 40%;
     animation-name: carteles;
-    animation-duration: 5s;
+    animation-duration: 7s;
 }
 
 @keyframes carteles {
     0% {
         opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
         transform: scale(0.1);
     }
+    
     100% {
         opacity: 100%;
         transform: scale(1.0);
@@ -74,11 +80,12 @@
 
 .txt2 a {
     font-size: 140%;
-    width: 20%;
     position: absolute;
-    left: 38%;
+    left: 40%;
     top: 80%;
     text-decoration: none;
+    color: rgb(231, 231, 17);
     border-radius: 30px;
     background-color: rgba(192, 11, 11, 0.747);
+    padding: 0 20px;
 }
